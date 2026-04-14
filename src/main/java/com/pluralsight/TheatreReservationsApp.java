@@ -54,6 +54,8 @@ public class TheatreReservationsApp {
         }
 
         String ticketWord = (tickets == 1) ? "ticket" : "ticktes";
+        System.out.println();
+        System.out.println(tickets + " " + ticketWord + " reserved for " + date + " under " + lastName + ", " + firstName);
 
 
 
