@@ -21,6 +21,10 @@ public class TheatreReservationsApp {
             }
         }
 
+        String[] parts = fullName.split(" ");
+        String firstName = parts[0];
+        String lastName = parts[parts.length - 1];
+
 
 
     }
