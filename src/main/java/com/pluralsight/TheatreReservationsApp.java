@@ -25,6 +25,16 @@ public class TheatreReservationsApp {
         String firstName = parts[0];
         String lastName = parts[parts.length - 1];
 
+        LocalDate date = null;
+        DateTimeFormatter inputFormat = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+
+        while (date == null) {
+            System.out.print("What date will you be arriving? ₍^. .^₎⟆ (MM/dd/yyyy): ");
+            String dateInput = keyboard.nextLine().trim();
+
+        }
+
+
 
 
     }
