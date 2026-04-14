@@ -32,6 +32,11 @@ public class TheatreReservationsApp {
             System.out.print("What date will you be arriving? ₍^. .^₎⟆ (MM/dd/yyyy): ");
             String dateInput = keyboard.nextLine().trim();
 
+            try {
+                date = LocalDate.parse(dateInput, inputFormat);
+            } catch (DateTimeParseException e) {
+                System.out.println("Invalid Date! T-T\nPlease use MM/dd/yyyy.");
+            }
         }
 
 
