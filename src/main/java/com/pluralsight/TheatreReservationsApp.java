@@ -53,6 +53,8 @@ public class TheatreReservationsApp {
             }
         }
 
+        String ticketWord = (tickets == 1) ? "ticket" : "ticktes";
+
 
 
 
