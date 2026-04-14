@@ -39,6 +39,20 @@ public class TheatreReservationsApp {
             }
         }
 
+        int tickets = 0;
+        while (tickets <= 0) {
+            System.out.print("How many tickets would you like? :3");
+            if (keyboard.hasNext()) {
+                tickets = keyboard.nextInt();
+                if (tickets <= 0) {
+                    System.out.println("Please enter a number greater than 0. >_<");
+                }
+            } else {
+                System.out.println("Please enter a valid whole number. ^^;");
+                keyboard.next();
+            }
+        }
+
 
 
 
