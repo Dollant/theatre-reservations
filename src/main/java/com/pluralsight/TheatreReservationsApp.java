@@ -41,7 +41,7 @@ public class TheatreReservationsApp {
 
         int tickets = 0;
         while (tickets <= 0) {
-            System.out.print("How many tickets would you like? :3");
+            System.out.print("How many tickets would you like? ");
             if (keyboard.hasNext()) {
                 tickets = keyboard.nextInt();
                 if (tickets <= 0) {
@@ -53,12 +53,10 @@ public class TheatreReservationsApp {
             }
         }
 
-        String ticketWord = (tickets == 1) ? "ticket" : "ticktes";
+        String ticketWord = (tickets == 1) ? "ticket" : "tickets";
         System.out.println();
         System.out.println(tickets + " " + ticketWord + " reserved for " + date + " under " + lastName + ", " + firstName);
 
-
-
-
+        keyboard.close();
     }
 }
